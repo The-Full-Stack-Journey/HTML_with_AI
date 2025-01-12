@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Platform</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #0d1117, #1a1f29);
+            color: white;
+            margin: 0;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #0d1117;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .auth-buttons a {
+            color: white;
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .auth-buttons a:hover {
+            background-color: white;
+            color: #0d1117;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .cta {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        .cta input {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+        .cta button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cta .signup {
+            background-color: #28a745;
+            color: white;
+        }
+        .cta .signup:hover {
+            background-color: #218838;
+        }
+        .cta .copilot {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+        .cta .copilot:hover {
+            background-color: white;
+            color: #0d1117;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo">
+            <span>GitHub</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#">Product</a>
+            <a href="#">Solutions</a>
+            <a href="#">Resources</a>
+            <a href="#">Open Source</a>
+            <a href="#">Enterprise</a>
+            <a href="#">Pricing</a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#">Sign in</a>
+            <a href="#">Sign up</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Build and ship software on a single, collaborative platform</h1>
+        <p>Join the world's most widely adopted AI-powered developer platform.</p>
+        <div class="cta">
+            <input type="email" placeholder="Enter your email">
+            <button class="signup">Sign up for GitHub</button>
+            <button class="copilot">Try GitHub Copilot</button>
+        </div>
+    </section>
+</body>
+</html>
